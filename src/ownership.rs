@@ -62,11 +62,11 @@ pub fn run() {
 
     let mut s11 = String::from("hello");
     let r1 = &mut s11;
-    // エラー
+    // エラー(lifetime関連のエラー)
     // println!("{}", s11);
     // println!("{}", r1);
     // 成功
-    println!("{}", r1);
+    println!("{}", r1); //ここでr1のlifetimeが終了するため次のs11が使用できる
     println!("{}", s11);
 
     let mut s12 = String::from("hello");
