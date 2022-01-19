@@ -2,7 +2,8 @@
 // mod stack_heap;
 // mod vars;
 // mod generics;
-mod lifetime;
+// mod lifetime;
+mod structs;
 
 fn main() {
 	// println!("Hello, world!");
@@ -10,5 +11,5 @@ fn main() {
 	// vars::sub_a::func_a();
 	// vars::sub_b::func_b();
 	// stack_heap::run();
-	lifetime::run();
+	structs::run();
 }
